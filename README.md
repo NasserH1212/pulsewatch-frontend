@@ -1,6 +1,11 @@
 # PulseWatch frontend
 
-React dashboard for the PulseWatch uptime-monitoring API (see `../pulsewatch-backend`).
+[![CI](https://github.com/NasserH1212/pulsewatch-frontend/actions/workflows/ci.yml/badge.svg)](https://github.com/NasserH1212/pulsewatch-frontend/actions/workflows/ci.yml)
+![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178C6?logo=typescript&logoColor=white)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+React dashboard for the [PulseWatch uptime-monitoring API](https://github.com/NasserH1212/pulsewatch-backend): live monitor status over WebSockets, with the access token kept in memory and a single-flight refresh that respects the backend's refresh-token rotation.
 
 ## Stack
 
@@ -9,7 +14,7 @@ socket.io-client · Vitest + React Testing Library · ESLint.
 
 ## Getting started
 
-1. Start the backend (port 4000): `npm run dev` in `../pulsewatch-backend`.
+1. Start the [backend](https://github.com/NasserH1212/pulsewatch-backend) (port 4000): `npm run dev` in `../pulsewatch-backend`.
 2. Install and run the frontend:
 
    ```
@@ -48,3 +53,7 @@ src/components/ presentational pieces (StatusBadge, MonitorList, ...)
 src/pages/      LoginPage, RegisterPage, DashboardPage
 src/lib/        pure helpers (status display, relative time, summaries)
 ```
+
+## License
+
+[MIT](LICENSE)
